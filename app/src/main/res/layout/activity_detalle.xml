@@ -37,33 +37,38 @@
 
         <TextView
             android:id="@+id/idNombre"
-            android:layout_width="wrap_content"
+            android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:textSize="20sp"
             android:textStyle="bold"
-            tools:text="Nombre"/>
+            tools:text="Nombre"
+            android:layout_toStartOf="@+id/idImagen" />
 
         <TextView
             android:id="@+id/idDireccion"
             android:layout_below="@+id/idNombre"
-            android:layout_width="wrap_content"
+            android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            tools:text="Direccion"/>
+            tools:text="Direccion"
+            android:layout_alignParentStart="true"
+            android:layout_toStartOf="@+id/idImagen" />
 
         <TextView
             android:id="@+id/idTelefono"
             android:layout_below="@+id/idDireccion"
-            android:layout_width="wrap_content"
+            android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            tools:text="Telefono"/>
+            tools:text="Telefono"
+            android:layout_toStartOf="@+id/idImagen" />
 
         <TextView
             android:id="@+id/idRubro"
             android:layout_below="@+id/idTelefono"
-            android:layout_width="wrap_content"
+            android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:textStyle="bold"
-            tools:text="Rubro"/>
+            tools:text="Rubro"
+            android:layout_toStartOf="@+id/idImagen" />
 
         <ImageView
             android:id="@+id/idImagen"
