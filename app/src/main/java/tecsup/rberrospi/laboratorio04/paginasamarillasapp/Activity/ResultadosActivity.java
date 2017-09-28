@@ -26,15 +26,94 @@ public class ResultadosActivity extends AppCompatActivity {
     String valor;
 
     int[] ids = {1, 2, 3, 4, 5, 6, 7, 8, 9, 10};
-    String[] rubros = { "Comidas", "rubro2", "rubro3", "rubro4", "rubro5", "rubro6", "rubro7", "rubro8", "rubro9", "rubro10"};
-    String[] nombres = {"Pizza Hut", "Nombre2", "Nombre3", "Nombre4", "Nombre5", "Nombre6", "Nombre7", "Nombre8", "Nombre9", "Nombre10"};
-    String[] direcciones = {"Real Plaza Centro Civico, Av. Garcilaso de la Vega 1337, Cercado de Lima 15001", "direccion2", "direccion3", "direccion4", "direccion5", "direccion6", "direccion7", "direccion8", "direccion9", "direccion10"};
-    String[] telefonos = {"(01) 5055001", "909090902", "909090903", "909090904", "909090905", "909090906", "909090907", "909090908", "909090909", "909090900"};
-    String [] correos = {"pizzahut@gmail.com", "correo2", "correo3", "correo4", "correo5", "correo6", "correo7", "correo8", "correo9", "correo10"};
-    String [] url = {"https://www.pizzahut.com.pe/Online/Home/Home", "http://www.info2.com", "http://www.info3.com", "http://www.info4.com", "http://www.info5.com", "http://www.info6.com", "http://www.info7.com", "http://www.info8.com", "http://www.info9.com", "http://www.info10.com"};;
-    int[] logos = {R.drawable.img_empresa1, R.drawable.bg_anuncio, R.drawable.bg_anuncio, R.drawable.bg_anuncio, R.drawable.bg_anuncio, R.drawable.bg_anuncio, R.drawable.bg_anuncio, R.drawable.bg_anuncio, R.drawable.bg_anuncio, R.drawable.bg_anuncio};
-    String[] infos = {"Desde la increíble experiencia de su sabor hasta su delicioso aspecto y rico olor. Hemos venido haciendo pizza por más de 40 años y nuestra pasión es la base para todo lo que hacemos.", "info2", "info3", "info4", "info5", "info6", "info7", "info8", "info9", "info10"};;
-
+    String[] rubros = {
+            "Comidas",
+            "Comidas",
+            "Comidas",
+            "Comidas",
+            "Educación",
+            "Educación",
+            "Educación",
+            "Automóviles",
+            "Entretenimiento",
+            "Hoteles"};
+    String[] nombres = {
+            "Pizza Hut",
+            "China Wok",
+            "Pollo John",
+            "Norky's",
+            "Icpna",
+            "Senati",
+            "Tecsup",
+            "Toyota",
+            "PlayStation",
+            "Sheraton"};
+    String[] direcciones = {
+            "Real Plaza Centro Civico, Av. Garcilaso de la Vega 1337, Cercado de Lima 15001",
+            "Centro Comercial Jockey Plaza, Av. Javier Prado Este 4200, Santiago de Surco 15023",
+            "Av. Del parque sur. Ciudad Delicias, Chihuahua, Mexico",
+            "General Garzón 1280, Jesús María 15072",
+            "Av. Angamos Oeste 160, Miraflores 15074",
+            "Alfredo Mendiola 3540, Independencia 15311",
+            "Santa Anita, Avenida Cascanueces 2221, Lima 15011",
+            "Av. Santo Toribio N° 173, Vía Central N° 125, Lima, Perú, Cercado de Lima",
+            "Tienda 4-09, Centro Comercial Arenales, Av Arenales 1759, Cercado de Lima",
+            "Av Paseo de la República 170, Cercado de Lima 15001"};
+    String[] telefonos = {
+            "(01) 5055001",
+            "(01) 4342397",
+            "+52 639 147 2714",
+            "(01) 4330457",
+            "(01) 7067000",
+            "(01) 2089999",
+            "(01) 3173900",
+            "(01) 6111000",
+            "(01) 2795444",
+            "(01) 3155000"};
+    String [] correos = {
+            "pizzahut@gmail.com",
+            "chinawok@gmail.com",
+            "@pollo.john.delicias",
+            "norkys@gmail.com",
+            "icpna@gmail.com",
+            "senati@gmail.com",
+            "tecsup@gmail.com",
+            "toyotaperu@gmail.com",
+            "playstation@gmail.com",
+            "sheratonlima@gmail.com"};
+    String [] url = {
+            "https://www.pizzahut.com.pe/Online/Home/Home",
+            "http://www.chinawok.com.pe/",
+            "https://www.facebook.com/pg/pollo.john.delicias/about/?ref=page_internal",
+            "http://norkys.pe/",
+            "http://www.icpna.edu.pe/",
+            "http://www.senati.edu.pe/web/",
+            "http://www.tecsup.edu.pe/home/",
+            "https://www.toyotaperu.com.pe/",
+            "https://www.playstation.com/es-pe/",
+            "www.sheratonlima.com/es"};;
+    int[] logos = {
+            R.drawable.img_empresa1,
+            R.drawable.img_chinawok,
+            R.drawable.img_pollo,
+            R.drawable.img_pollon,
+            R.drawable.img_icpna,
+            R.drawable.img_senati,
+            R.drawable.img_tecsup,
+            R.drawable.img_toyota,
+            R.drawable.img_playstation,
+            R.drawable.img_sheraton};
+    String[] infos = {
+            "Desde la increíble experiencia de su sabor hasta su delicioso aspecto y rico olor. Hemos venido haciendo pizza por más de 40 años y nuestra pasión es la base para todo lo que hacemos.",
+            "China Wok es una empresa peruana de comida rápida, dedicada al rubro de la gastronomía peruano-china.",
+            "Variedad de productos de pollo, frescos y congelados, asi como sus riquicimos platillos.",
+            "Ven con tu familia y disfruta del más delicioso Pollo a la Brasa del Perú, y de las mejores parrillas.",
+            "La enseñanza del idioma inglés se basa en un sistema metodológico especialmente desarrollado que articula la extensa experiencia institucional del ICPNA con las mejores prácticas metodológicas  en el campo de la enseñanza del inglés como lengua extranjera.",
+            ":v",
+            "Tecsup es una organización educativa privada sin fines de lucro, dedicada a formar y capacitar profesionales, así como brindar servicios de consultoría, investigación y aplicación de tecnología.",
+            "Toyota Motor Corporation, simplemente llamado Toyota, es un fabricante de automóviles japonés con sede en Toyota, Japón.",
+            "Desafía los límites de los juegos con las consolas de videojuegos PlayStation. Conoce la gama de consolas PS4, PS Vita y goza de la mejor experiencia.",
+            "El Sheraton Lima Hotel & Convention Center, conocido simplemente como Hotel Sheraton es un hotel de 5 estrellas ubicado en el Paseo de los Héroes Navales, primera cuadra del Paseo de la República en pleno centro de Lima, capital del Perú."};;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
